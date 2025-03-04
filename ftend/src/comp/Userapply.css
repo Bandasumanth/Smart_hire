@@ -1,0 +1,77 @@
+/* Userapply.css */
+
+.mainapplyu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 120px 0px 80px 0px; */
+    height: 88vh;
+}
+.form-container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px 10px 20px 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background:linear-gradient(135deg, #6a11cb, #2575fc);
+    animation: fadeIn 0.6s ease-in-out;
+    position: relative;
+    /* top: -80px; */
+   
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+.form-group input[type="text"],
+#email[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="file"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    display: block;
+    width: 45%;
+    padding: 10px;
+    background-color: #f72323;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+}
+.submit-button:active{
+    background-color: #67ff20;
+}
+
+.submit-button:hover {
+    background-color: #2024ff;
+}
+
+.file-name {
+    font-size: 14px;
+    color: #555;
+}

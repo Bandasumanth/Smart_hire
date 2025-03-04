@@ -1,0 +1,169 @@
+/* Admin Container */
+.admin-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f3f3f3, #ffffff);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 0.8s ease-in-out;
+    position: relative;
+    top:10vh;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dropdown Styles */
+.admin-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.admin-select {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s ease;
+    background: white;
+    cursor: pointer;
+}
+
+.admin-select:hover {
+    border-color: #4a90e2;
+}
+
+.admin-select:focus {
+    border-color: #1e70bf;
+    box-shadow: 0 0 8px rgba(30, 112, 191, 0.3);
+}
+
+/* Table Container */
+.admin-table-container {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+/* Table Styles */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.admin-table th, .admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.admin-table th {
+    background: #4a90e2;
+    color: white;
+    font-size: 16px;
+}
+
+.admin-table tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.admin-table tbody tr:hover {
+    background: #f5faff;
+    transform: scale(1.02);
+}
+
+.accept-btn, .reject-btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.accept-btn {
+    background-color: #28a745;
+    color: white;
+    text-align: left;
+}
+
+.reject-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 15px;
+    }
+
+    .admin-select {
+        width: 100%;
+    }
+
+    .admin-table th, .admin-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .accept-btn, .reject-btn {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+}
+
+/* No Data Message */
+.no-data-message {
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+    font-weight: bold;
+    padding: 20px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Resume Link */
+.admin-table a {
+    color: #1e70bf;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.admin-table a:hover {
+    color: #ff5722;
+}
+
+/* Status Colors */
+.admin-table td[style*="green"] {
+    font-weight: bold;
+    color: green;
+}
+
+.admin-table td[style*="red"] {
+    font-weight: bold;
+    color: red;
+}

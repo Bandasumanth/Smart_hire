@@ -1,0 +1,83 @@
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+    column-gap: 50px; 
+    padding: 30px;
+    margin: auto;
+    position: relative;
+    top: 10vh;
+  }
+  
+  .cardz {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 600px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: large;
+  }
+  .card-title:hover{
+    text-decoration: underline;
+    color: rgb(84, 127, 245);
+  }
+  
+  .card-details {
+    margin-bottom: 15px;
+   
+  }
+  
+  .card-buttonz {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .card-buttonz button {
+    padding: 1px 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .apply-button {
+    color: white;
+  }
+  .apply-button:hover{
+    background-color: rgb(108, 154, 223);
+  }
+  
+  .skillcont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .skillz {
+    background-color: #e0e0e0;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .no-jobs-message {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }

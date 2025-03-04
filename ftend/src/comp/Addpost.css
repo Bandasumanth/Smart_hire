@@ -1,0 +1,165 @@
+/* Addpost.css */
+
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  min-height: 100vh;
+  position: relative;
+  top: 10vh;
+  
+}
+
+.addpost-container {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.addpost-card {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.preview-content p {
+  white-space: pre-wrap; /* Preserves line breaks and spaces */
+}
+.preview-container {
+  flex: 1;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  max-height: 250vh;
+  overflow-y: auto;
+}
+
+/* Form Styles */
+.addpost-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.addpost-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.addpost-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.addpost-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0d0d0e;
+}
+
+.addpost-input,
+.addpost-select,
+.addpost-textarea {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #050505;
+  background-color: #f9fafb;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.addpost-input:focus,
+.addpost-select:focus,
+.addpost-textarea:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.addpost-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.addpost-button {
+  padding: 6px 60px;
+  background-color: #3b82f6;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addpost-button:hover {
+  background-color: #2563eb;
+}
+
+/* Preview Styles */
+.preview-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.preview-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.preview-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.preview-content strong {
+  color: #111827;
+  font-weight: 500;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .addpost-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .addpost-card,
+  .preview-container {
+      width: 100%;
+  }
+
+  .preview-container {
+      max-height: none;
+      overflow-y: visible;
+  }
+}

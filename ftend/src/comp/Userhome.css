@@ -1,0 +1,258 @@
+.user-home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+  position: relative;
+  top: 5vh;
+  margin: auto;
+}
+
+.user-home-content {
+  display: flex;
+  max-width: 1200px;
+  padding: 10px;
+  width: 100%;
+  gap: 20px;
+}
+
+.filter-section {
+  flex: 0 0 300px;
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
+}
+
+.job-list-section {
+  flex: 1;
+  overflow-y: auto;
+  max-height: calc(120vh - 40px);
+}
+
+.job-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  right: 15px;
+}
+
+.job-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.job-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.job-card-title:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+.job-card-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.whatsapp-button {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apply-button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  color: white;
+}
+
+.whatsapp-button {
+  background-color: green;
+  color: white;
+  text-decoration: none;
+}
+
+.job-card-details {
+  margin-bottom: 15px;
+}
+
+.job-card-details p {
+  margin: 5px 0;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.job-card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+.no-jobs-message {
+  text-align: center;
+  color: #666;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  font-size: 16px;
+}
+
+.job-search-form {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 18px;
+}
+
+.job-search-form h2 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  color: black;
+}
+
+.job-search-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.job-search-form input, .job-search-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-buttons {
+  text-align: right;
+}
+
+.form-buttons button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.form-buttons button:hover {
+  background-color: #038a58;
+}
+.filter-toggle-button{
+  display: none;
+}
+/* Mobile View */
+@media (max-width: 760px) {
+
+  .user-home-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .filter-section {
+    display: none;
+    width: 100%;
+    position: static;
+    margin-bottom: 10px; /* Add spacing below the filter section */
+  }
+
+  .filter-section.visible {
+    display: block;
+  }
+
+  .filter-toggle-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Add spacing below the button */
+  }
+
+  .job-list-section {
+    max-height: none; 
+    overflow-y: visible; /* Allow content to flow naturally */
+  }
+
+  .job-card {
+    /* width: 100%; Ensure job cards take full width */
+    margin-bottom: 10px; /* Reduce margin between cards */
+    padding: 10px; /* Reduce padding inside cards */
+    margin-left: 8px;
+  }
+  
+
+  .job-card-header {
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 10px; 
+  }
+
+  .job-card-buttons {
+    width: 100%; /* Ensure buttons take full width */
+    justify-content: space-between; /* Space buttons evenly */
+    flex-direction: row-reverse;
+  }
+
+  .job-card-details {
+    margin-bottom: 10px; /* Reduce spacing between details */
+  }
+
+  .job-card-skills {
+    gap: 5px; /* Reduce spacing between skill tags */
+  }
+
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Reduce spacing above buttons */
+  }
+
+  .form-buttons button {
+    width: 48%; /* Ensure buttons take equal width */
+  }
+}

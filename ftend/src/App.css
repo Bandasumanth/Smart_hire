@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* ApplicantTable.css */
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  table th,
+  table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  table tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Pagination Styles */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .pagination__link {
+    padding: 8px 12px;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination__link:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .pagination__link--active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .pagination__link--disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination__link--disabled:hover {
+    background-color: transparent;
+  }
+  
+ 
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* a:hover {
+    text-decoration: underline;
+  } */
+
+  
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #333;
+}
+
+table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pagination__link {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.pagination__link:hover {
+  background-color: #f4f4f4;
+}
+
+.pagination__link--active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination__link--disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination__link--disabled:hover {
+  background-color: transparent;
+}
+
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}

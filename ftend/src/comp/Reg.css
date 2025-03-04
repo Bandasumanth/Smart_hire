@@ -1,0 +1,272 @@
+.mainsignup {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 93.5vh;
+  margin: 0;
+  padding: 20px;
+  background-image: url("https://img.freepik.com/free-vector/black-background-geometric-gradient-design_677411-2885.jpg?t=st=1739765962~exp=1739769562~hmac=8baa1a8247e07b14d1178dd0737127aadd4e5fa8b062dc454bec3c7ca182bbf6&w=826");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.signup-container {
+  display: flex;
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.login-left {
+  flex: 1;
+  background: linear-gradient(to bottom right, #95b8fa, #2a5298);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.login-left img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.login-left h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.login-left p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.login-right {
+  flex: 1;
+  padding: 40px;
+  background-color: white;
+  width: 500px;
+  /* background-image: url("https://t4.ftcdn.net/jpg/04/51/60/25/240_F_451602533_Jr5z9vxaUgmI4fLgoKMyX9qukHQ2jg3l.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+label svg {
+  margin-right: 10px;
+  color: #f05053;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 200px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #f05053;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.row .input-group {
+  flex: 1;
+}
+
+.login-button {
+  width: 50%;
+  padding: 12px;
+  background-color: #434dd6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  opacity: 0.8;
+}
+
+.login-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.errors-message {
+  color: #ff4d4d;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+.input-error {
+  border-color: #ff4d4d !important;
+}
+
+.input-valid {
+  border-color: #4caf50 !important;
+}
+
+.input-empty {
+  border-color: #ff9800 !important;
+}
+
+.message-card {
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.message-card.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.message-card.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+@media (min-width: 768px) {
+  .login-container {
+    flex-direction: row;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+}
+
+/* General Styles for the OTP Card */
+.otp-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.otp-card .input-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.otp-card .input-group label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.otp-card .input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.otp-card .input-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.otp-card .login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.otp-card .login-button:hover {
+  background-color: #0056b3;
+}
+
+.otp-card .login-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Message Card Styles */
+.message-card {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.message-card.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message-card.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .otp-card {
+    padding: 15px;
+  }
+
+  .otp-card .input-group input {
+    font-size: 12px;
+  }
+
+  .otp-card .login-button {
+    font-size: 14px;
+  }
+}
